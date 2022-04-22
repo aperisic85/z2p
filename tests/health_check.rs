@@ -1,11 +1,8 @@
-#[cfg(test)]
-mod tests {
-    use crate::health_check;
+//! tests/health_check.rs
 
-    #[tokio::tests]
-    async fn health_check_succeeds() {
-        let response = health_check().await;
+use z2p::main;
 
-        assert!(response.status().is_ok())
-    }
+#[test]
+fn dummy_test(){
+    main()
 }
